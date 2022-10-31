@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>webpage</title>
+  <style>
+    * {
+      background-color: black;
+    }
+
+    .navbar {
+      width: 100%;
+      padding-left: 8%;
+      padding-right: 8%;
+      box-sizing: border-box;
+      overflow: hidden;
+    }
+
+    .nav {
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo {
+      width: 50px;
+      cursor: pointer;
+      margin: 30px;
+    }
+
+    .menu-icon {
+      width: 25px;
+      cursor: pointer;
+      display: none;
+
+    }
+
+    nav {
+      flex: 1;
+      text-align: right;
+    }
+
+    nav ul li {
+      list-style: none;
+      display: inline-block;
+      margin-right: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: aliceblue;
+      font-size: 17px;
+    }
+
+    @media only screen and (max-width:700px) {
+      nav ul {
+        width: 100%;
+        background: black;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        z-index: 2;
+      }
+
+      nav ul li {
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+
+      #menuList {
+        display: none;
+      }
+
+      nav ul li a {
+        color: aliceblue;
+      }
+
+      .menu-icon {
+        display: block;
+        margin: left 3000px;
+      }
+
+    }
+
+    .services .box-container {
+      /* margin-top: 100px; */
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+      gap: 1.5rem;
+    }
+
+    .services .box-container .box {
+      padding: 0.5rem 0rem;
+      cursor: pointer;
+    }
+
+    .services .box-container .box:hover {
+      border-color: blue;
+      box-shadow: 1px 1px 2px 5px blue;
+      border-radius: 10px;
+
+    }
+
+    .services .box-container .box img {
+      height: 10rem;
+    }
+
+    .services .box-container .box h3 {
+
+      font-size: 1.7rem;
+      padding-top: 0rem;
+    }
+
+    .services .box-container .box .text {
+      color: aliceblue;
+      float: right;
+      width: 60%;
+
+    }
+  </style>
+  <script>
+    function togglemenu() {
+      var x = document.getElementById("menuList");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    //   var menuList = document.getElementById("menuList").style.display = "block";
+    // }
+
+  </script>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="nav">
+      <img src="logo1.png" class="logo" style="width: 100px;height:50px;display: inline;">
+      <nav>
+        <ul id="menuList">
+          <li><a href="#">Products</a>
+
+          <li><a href="#">Clubs</a></li>
+          <li><a href="#">Get in Touch</a></li>
+
+        </ul>
+      </nav>
+      <img src="bar.png" class="menu-icon" onclick="togglemenu()">
+
+
+    </div>
+  </div>
+
+  <section class="services">
+
+
+    <center>
+      <h1 style="color:aliceblue;">Lorem ipsum dolor sit amet consectetur </h1>
+    </center>
+    <div class="box-container">
+      <div class="box">
+        <img src="pexels-pixabay-4158.jpg" alt="" style="width:130px;">
+        <div class="text">
+          <center>
+            <h2>Cyber Sqad</h2>
+          </center>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <center><button
+              style="background-color: rgb(159, 154, 154);font-size: large;border-radius: 5px;">intrested</button>
+          </center>
+
+        </div>
+      </div>
+      <div class="box">
+        <img src="pexels-pixabay-4158.jpg" alt="" style="width: 120px">
+        <div class="text">
+          <center>
+            <h2>Cyber Sqad</h2>
+          </center>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <center><button
+              style="background-color: rgb(159, 154, 154);font-size: large;border-radius: 5px;">intrested</button>
+          </center>
+
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="pexels-pixabay-4158.jpg" alt="" style="width: 120px">
+        <div class="text">
+          <center>
+            <h2>Cyber Sqad</h2>
+          </center>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <center><button
+              style="background-color: rgb(159, 154, 154);font-size: large;border-radius: 5px;">intrested</button>
+          </center>
+
+        </div>
+      </div>
+
+      <div class="box">
+        <img src="pexels-pixabay-4158.jpg" alt="" style="width: 100px">
+        <div class="text">
+          <center>
+            <h2>Cyber Sqad</h2>
+          </center>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <center><button
+              style="background-color: rgb(159, 154, 154);font-size: large;border-radius: 5px;">intrested</button>
+          </center>
+
+        </div>
+
+      </div>
+
+
+      <div class="box">
+        <img src="pexels-pixabay-4158.jpg" alt="" style="width: 130px; ">
+        <div class="text">
+          <center>
+            <h2>Cyber Sqad</h2>
+          </center>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+          <center><button
+              style="background-color: rgb(159, 154, 154);font-size: large;border-radius: 5px;">intrested</button>
+          </center>
+
+        </div>
+      </div>
+
+    </div>
+    <center>
+      <h1 style="color:aliceblue;">VISION Lorem ipsum, dolor sit amet consectetur adipisicing</h1>
+    </center>
+
+  </section>
+  <br>
+  <br>
+
+</body>
+
+</html>
